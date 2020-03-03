@@ -31,7 +31,7 @@ namespace binomial {
         public:
             void set_strike(const double& k) { strike_ = k; }
             state input_data();
-            const double payoff(double z) ;
+            const double payoff(double z) override ;
         private:
             double strike_;
     };
@@ -40,7 +40,7 @@ namespace binomial {
         public:
             void set_strike(const double& k) { strike_ = k; }
             state input_data();
-            const double payoff(double z) ;
+            const double payoff(double z) override ;
         private:
             double strike_;
     };
